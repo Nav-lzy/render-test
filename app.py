@@ -9,6 +9,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapmi
 # Initialize the app - incorporate css
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(external_stylesheets=external_stylesheets)
+server = app.server
 
 # App layout
 app.layout = [
@@ -44,3 +45,4 @@ def update_graph(col_chosen):
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+
