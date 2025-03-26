@@ -1,7 +1,7 @@
 from dash import html, dcc, Input, Output
 import plotly.express as px
 import pandas as pd
-from app import app
+from app.app import app
 from pathlib import Path
 
 csv_path = Path(__file__).resolve(

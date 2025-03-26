@@ -2,8 +2,11 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-from pages import home_page, genres_page, polarity_page, solo_collab_page, release_time_page, spotify_stats_page, shazam_page
-from app import app
+from app.pages import home_page, genres_page, polarity_page, solo_collab_page, release_time_page, spotify_stats_page, shazam_page
+from app.app import app
+
+# Make sure the server instance is defined at the top
+server = app.server  # Gunicorn will look for this
 
 # Define the head
 head = html.Div([

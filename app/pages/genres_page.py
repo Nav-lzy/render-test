@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
-from app import app
+from app.app import app
 from pathlib import Path
 
 # TODO:

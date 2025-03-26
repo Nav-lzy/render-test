@@ -2,7 +2,7 @@ import pandas as pd
 from dash import dcc, html, Input, Output
 import plotly.express as px
 from collections import Counter
-from app import app
+from app.app import app
 from io import BytesIO
 from wordcloud import WordCloud
 import base64
